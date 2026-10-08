@@ -1,61 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors & Opacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-h1 {
-    color: black;
-}
+    <h1>Colors & Opacity</h1>
 
-h2 {
-    color: black;
-}
+    <!-- Color Swatches -->
+    <div class="swatches">
 
-/* Named color */
-.named {
-    background-color: red;
-}
+        <div class="swatch named">
+            Named Color: Red
+        </div>
 
-/* 6-digit HEX */
-.hex {
-    background-color: #3498DB;
-}
+        <div class="swatch hex">
+            HEX: #3498DB
+        </div>
 
-/* RGB */
-.rgb {
-    background-color: rgb(46, 204, 113);
-}
+        <div class="swatch rgb">
+            RGB: rgb(46, 204, 113)
+        </div>
 
-/* RGBA with transparency */
-.rgba {
-    background-color: rgba(155, 89, 182, 0.5);
-}
+        <div class="swatch rgba">
+            RGBA: rgba(155, 89, 182, 0.5)
+        </div>
 
-/* Common swatch styling */
-.swatch {
-    width: 300px;
-    height: 60px;
-    margin-bottom: 20px;
-}
+    </div>
 
-/* Opacity affects the whole element and its children */
-.opacity-box {
-    width: 300px;
-    height: 100px;
-    background-color: blue;
-    opacity: 0.5;
-}
+    <h2>Opacity vs RGBA</h2>
 
-.opacity-box p {
-    color: white;
-}
+    <!-- Opacity and RGBA -->
+    <div class="comparison">
 
-/* RGBA affects only the background */
-.rgba-box {
-    width: 300px;
-    height: 100px;
-    background-color: rgba(0, 0, 255, 0.5);
-}
+        <div class=" opacity-box">
+            <p>This text is affected by opacity.</p>
+        </div>
 
-.rgba-box p {
-    color: white;
-}
+        <div class=" rgba-box">
+            <p>This text is not affected by background transparency.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
