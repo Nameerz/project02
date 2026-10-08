@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+/* Named color */
+.named {
+    background-color: red;
+}
+
+/* 6-digit HEX */
+.hex {
+    background-color: #3498DB;
+}
+
+/* RGB */
+.rgb {
+    background-color: rgb(46, 204, 113);
+}
+
+/* RGBA with transparency */
+.rgba {
+    background-color: rgba(155, 89, 182, 0.5);
+}
+
+/* Common swatch styling */
+.swatch {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Opacity affects the whole element and its children */
+.opacity-box {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    opacity: 0.5;
+}
+
+.opacity-box p {
+    color: white;
+}
+
+/* RGBA affects only the background */
+.rgba-box {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.rgba-box p {
+    color: white;
+}
