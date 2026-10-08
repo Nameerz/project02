@@ -11,31 +11,39 @@
     <h1>Colors & Opacity</h1>
 
     <!-- Color Swatches -->
-    <div class="swatch named">
-        Named Color: Red
+    <div class="swatches">
+
+        <div class="swatch named">
+            Named Color: Red
+        </div>
+
+        <div class="swatch hex">
+            HEX: #3498DB
+        </div>
+
+        <div class="swatch rgb">
+            RGB: rgb(46, 204, 113)
+        </div>
+
+        <div class="swatch rgba">
+            RGBA: rgba(155, 89, 182, 0.5)
+        </div>
+
     </div>
 
-    <div class="swatch hex">
-        HEX: #3498DB
-    </div>
-
-    <div class="swatch rgb">
-        RGB: rgb(46, 204, 113)
-    </div>
-
-    <div class="swatch rgba">
-        RGBA: rgba(155, 89, 182, 0.5)
-    </div>
-
-    <!-- Opacity comparison -->
     <h2>Opacity vs RGBA</h2>
 
-    <div class="opacity-box">
-        <p>This text is also affected by opacity: 0.5</p>
-    </div>
+    <!-- Opacity and RGBA -->
+    <div class="comparison">
 
-    <div class="rgba-box">
-        <p>This text stays fully visible with RGBA.</p>
+        <div class=" opacity-box">
+            <p>This text is affected by opacity.</p>
+        </div>
+
+        <div class=" rgba-box">
+            <p>This text is not affected by background transparency.</p>
+        </div>
+
     </div>
 
 </body>
